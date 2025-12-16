@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom"
 interface IProps extends RefAttributes<HTMLAnchorElement> {
     ulr: string
     textName: string
-    onClick: () => void
+    onClick?: () => void
 }
 const NavBtn = ({ulr, textName, onClick} : IProps) => {
     return (

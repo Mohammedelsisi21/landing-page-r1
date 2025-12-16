@@ -2,7 +2,7 @@ import SocialMedia from "../ui/SocialMedia"
 
 const Footer = () => {
   return (
-    <footer className="bg-black/5 border-t border-t-zinc-300 min-w-full py-6 lg:py-7 px-4 sm:px-8 max-w-7xl overflow-x-clip">
+    <footer className="bg-white/50 border-t border-t-zinc-300 min-w-full py-6 lg:py-7 px-4 sm:px-8 max-w-7xl overflow-x-clip">
       <div className="container mx-auto max-w-7xl py-12">
         <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <div>

@@ -2,7 +2,7 @@ import { BsCart } from "react-icons/bs";
 
 const CartItem = () => {
     return (
-        <div>
+        <div >
             <BsCart size={24} />
         </div>
     )

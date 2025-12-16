@@ -54,7 +54,7 @@ return (
                             <p className="text-3xl font-light capitalize text-black">
                                 menu
                             </p>
-                            <BiX size={28} className="text-black cursor-pointer" onClick={() => setOpenMenu(false)}/>
+                            <BiX size={28} className="text-black/90 cursor-pointer hover-icon" onClick={() => setOpenMenu(false)}/>
                         </div>
                         <nav className="flex flex-col items-center space-y-8 mt-10">
                             {navLink.map((item) => (

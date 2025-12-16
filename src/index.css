@@ -15,10 +15,13 @@
         animation-delay: calc(var(--i) * 0.1s);
     }
     .nav-btn {
-        @apply block text-black/50 hover:scale-100 hover:text-black transition duration-300
+        @apply block text-black/80 hover:scale-100 hover:text-black transition duration-300
     }
     .active {
         @apply text-black scale-90 border-b
+    }
+    .hover-icon {
+        @apply w-10 h-10 flex justify-center items-center hover:bg-gray-100 duration-300 rounded-full
     }
 }
 
