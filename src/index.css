@@ -1,1 +1,32 @@
 @import "tailwindcss";
+
+
+
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --animate-logo: logo 1s infinite;
+}
+
+
+@layer components {
+    .logo {
+        @apply relative inline-block text-black text-lg lg:text-3xl  animate-logo uppercase;
+        animation-delay: calc(var(--i) * 0.1s);
+    }
+    .nav-btn {
+        @apply block text-black/50 hover:scale-100 hover:text-black transition duration-300
+    }
+    .active {
+        @apply text-black scale-90 border-b
+    }
+}
+
+@keyframes logo {
+    0%, 40%, 100% {
+        transform: translateY(0);
+        }
+    20% {
+        transform: translateY(-15px);
+    }
+}
