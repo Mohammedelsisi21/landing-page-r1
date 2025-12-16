@@ -29,14 +29,14 @@ return (
     className="grid grid-cols-2 gap-6 lg:w-1/2 w-full mt-10 lg:mt-0">
         <div className="space-y-4 w-full">
             <motion.img
-            whileHover={{rotate: 5, scale: .90}}
+            whileHover={{rotate: 5, scale: .95}}
             variants={item}
             transition={{type: "spring", stiffness: 300, damping: 20}}
             src="/hero-1.webp" alt="Close up of a wooden armchair with beige cushions"
             className="w-full h-64 object-cover rounded-2xl"/>
 
             <motion.img
-            whileHover={{rotate: -5, scale: .90}}
+            whileHover={{rotate: -5, scale: .95}}
             variants={item}
             transition={{type: "spring", stiffness: 300, damping: 20}}
             src="/hero-2.webp" alt="Orange armchair in a stylish room with a floor lamp"
@@ -44,14 +44,14 @@ return (
         </div>
         <div className="space-y-4 mt-10">
             <motion.img
-            whileHover={{rotate: 5, scale: .90}}
+            whileHover={{rotate: 5, scale: .95}}
             variants={item}
             transition={{type: "spring", stiffness: 300, damping: 20}}
             src="/hero-4.webp" alt="Lorem, ipsum dolor sit amet!"
             className="w-full h-48 object-cover rounded-2xl"/>
 
             <motion.img
-            whileHover={{rotate: -5, scale: .90}}
+            whileHover={{rotate: -5, scale: .95}}
             variants={item}
             transition={{type: "spring", stiffness: 300, damping: 20}}
             src="/hero-3.webp" alt="Lorem, ipsum dolor sit amet!"

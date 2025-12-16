@@ -26,7 +26,7 @@ return (
     whileInView="visible"
     transition={{duration: .3, ease: "easeOut"}}
     className="lg:w-1/2">
-        <motion.h1 variants={item} className="text-7xl sm:text-8xl font-light leading-none mb-6 text-zinc-800">
+        <motion.h1 variants={item} className="font-head text-7xl sm:text-8xl font-light leading-none mb-6 text-zinc-800">
             Midcentury modern home decor
         </motion.h1>
         <motion.p variants={item} className="text-lg text-zinc-600 mb-8 max-w-lg">

@@ -1,13 +1,27 @@
 @import "tailwindcss";
 
-
-
+@font-face {
+    font-family: "Roboto";
+    src: url("./fonts/Roboto.ttf");
+}
+@font-face {
+    font-family: "Imprima";
+    src: url("./fonts/Imprima.ttf");
+}
+.font-main {
+    font-family: "Roboto", sans-serif;
+}
+.font-head {
+    font-family: "Imprima", sans-serif;
+}
 @variant dark (&:where(.dark, .dark *));
 
 @theme {
     --animate-logo: logo 1s infinite;
 }
-
+* {
+    font-family: "Roboto", sans-serif;
+}
 
 @layer components {
     .logo {

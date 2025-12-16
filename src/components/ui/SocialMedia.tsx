@@ -1,7 +1,7 @@
 import { FaInstagram, FaFacebookF, FaTwitter } from "react-icons/fa";
 const SocialMedia = () => {
   return (
-    <div className="flex items-center space-x-4">
+    <div className="flex items-center space-x-2">
         <a href="https://www.instagram.com/" target="_blank" className="hover-icon" aria-label="instagram">
           <FaInstagram size={20} className="cursor-pointer text-pink-600 hover:opacity-90" />
         </a>
