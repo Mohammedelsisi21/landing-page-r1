@@ -7,8 +7,8 @@ const CursorCircle = () => {
 
     useEffect(() => {
         const handelMouse = (e: MouseEvent) => {
-            x.set(e.clientX - 12)
-            y.set(e.clientY - 12)
+            x.set(e.clientX - 8)
+            y.set(e.clientY - 8)
         }
 
         window.addEventListener("mousemove", handelMouse)
@@ -19,13 +19,8 @@ const CursorCircle = () => {
     })
     return (
         <motion.div
-        style={{x,y,
-            boxShadow: `
-            0 0 30px rgba(0,0,0,0.15)
-            0 0 12px rgba(0,0,0,0.25),
-            `
-        }}
-        className="hidden md:block h-6 w-6 fixed top-0 left-0 z-1000 rounded-full pointer-events-none">
+        style={{x,y}}
+        className="hidden md:block h-4 w-4 border-2 border-orange-600 fixed top-0 left-0 z-1000 rounded-full pointer-events-none">
 
         </motion.div>
     )
