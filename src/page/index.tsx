@@ -1,3 +1,4 @@
+import BrandSection from "../components/BrandSection"
 import FeatureSection from "../components/FeatureSection"
 import HeroSectio from "../components/HeroSectio"
 
@@ -6,6 +7,7 @@ const HomePage = () => {
     <>
       <HeroSectio />
       <FeatureSection />
+      <BrandSection />
     </>
   )
 }
