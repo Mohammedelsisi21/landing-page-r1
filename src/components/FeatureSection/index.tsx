@@ -1,6 +1,8 @@
+import { lazy } from "react"
 import Button from "../ui/Button"
-import FeatureCard from "./components/FeatureCard"
-import HeadSection from "./components/HeadSection"
+
+const FeatureCard = lazy(() => import("./components/FeatureCard"))
+const HeadSection = lazy(() => import("./components/HeadSection"))
 
 const FeatureSection = () => {
   return (

@@ -1,9 +1,11 @@
+import { lazy } from "react"
 import { createBrowserRouter, createRoutesFromElements, Route } from "react-router-dom"
-import HomePage from "../page"
-import ShopPage from "../page/ShopPage"
-import AboutPage from "../page/AboutPage"
-import ContactPage from "../page/ContactPage"
-import App from "../App"
+
+const App = lazy(() => import("../App"))
+const HomePage = lazy(() => import("../page"))
+const ShopPage = lazy(() => import("../page/ShopPage"))
+const AboutPage = lazy(() => import("../page/AboutPage"))
+const ContactPage = lazy(() => import("../page/ContactPage"))
 
 
 const router = createBrowserRouter(

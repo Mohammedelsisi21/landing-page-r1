@@ -33,14 +33,14 @@ const FeatureCard = () => {
             className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10"
         >
             {feature.map((item) => (
-                <motion.div key={item.id} variants={image}>
-                    <Card 
+                <motion.span variants={image}>
+                    <Card
                         id={item.id}
                         image={item.image}
                         price={item.price}
                         name={item.name}
                     />
-                </motion.div>
+                </motion.span>
             ))}
         </motion.div>
     )

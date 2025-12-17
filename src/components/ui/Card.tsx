@@ -14,6 +14,7 @@ const Card = ({id, image, price, name}: IProps) => {
             <div className="relative overflow-hidden rounded-2xl mb-4 bg-gray-100 aspect-square">
                 <img
                     src={image}
+                    loading="lazy"
                     alt={name}
                     className="w-full h-full object-cover duration-500 group-hover:scale-110"
                 />

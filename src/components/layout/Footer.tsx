@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto max-w-7xl py-12">
         <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <h4 className="text-lg font-semibold mb-3">Home decor</h4>
+            <h2 className="text-lg font-semibold mb-3">Home decor</h2>
             <p className="text-sm text-gray-600">
               Curated vintage home decor from Berlin.
             </p>

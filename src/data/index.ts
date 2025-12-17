@@ -1,4 +1,4 @@
-import type { ILinks, IMetaTeam, IProduct} from "../interface";
+import type { ILinks, IMetaTeam, IProduct} from "../../src/interface";
 
 import team1 from "../assets/team-1.webp"
 import team2 from "../assets/team-2.webp"
@@ -13,7 +13,6 @@ import product6 from "../assets/product-4.webp"
 import product7 from "../assets/product-5.webp"
 import product8 from "../assets/product-6.webp"
 import product9 from "../assets/product-3.webp"
-
 
 
 const navLink: ILinks[] = [

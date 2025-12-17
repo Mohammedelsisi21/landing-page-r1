@@ -1,5 +1,7 @@
-import LeftSection from "./components/LeftSection"
-import RightSection from "./components/RightSection"
+import { lazy } from "react"
+
+const LeftSection = lazy(() => import("./components/LeftSection"))
+const RightSection = lazy(() => import("./components/RightSection"))
 
 const BrandSection = () => {
   return (

@@ -1,6 +1,7 @@
-import LeftHero from "./components/LeftHero"
-import RightHero from "./components/RightHero"
+import { lazy } from "react"
 
+const LeftHero = lazy(() => import("./components/LeftHero"))
+const RightHero = lazy(() => import("./components/RightHero"))
 
 const HeroSectio = () => {
 return (
