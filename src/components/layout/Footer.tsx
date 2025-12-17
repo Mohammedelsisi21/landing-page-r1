@@ -12,9 +12,9 @@ const Footer = () => {
             </p>
           </div>
           <div>
-            <h4 className="text-sm font-semibold tracking-wide mb-4">
+            <h3 className="text-sm font-semibold tracking-wide mb-4">
               SHOP
-            </h4>
+            </h3>
             <ul className="space-y-2 text-sm text-gray-600">
               <li><a href="#" className="hover:text-black">All products</a></li>
               <li><a href="#" className="hover:text-black">Furniture</a></li>
