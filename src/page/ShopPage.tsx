@@ -1,4 +1,4 @@
-import ProdcutCard from "../components/ProdcutCard"
+import ProdcutCards from "../components/ProdcutCard"
 
 const ShopPage = () => {
   return (
@@ -10,7 +10,7 @@ const ShopPage = () => {
           </h1>
           <p className="text-lg text-zinc-600">Discover unique vintage and retro pieces for your home</p>
         </div> 
-        <ProdcutCard />
+        <ProdcutCards />
       </div>
     </section>
   )

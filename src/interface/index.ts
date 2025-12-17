@@ -1,3 +1,4 @@
+import type { IconType } from "react-icons"
 
 
 export interface ILinks {
@@ -20,4 +21,13 @@ export interface IProduct {
     price: number
     title: string
     desc: string
+}
+
+export interface   IContact{
+    id?: number,
+    href: string
+    icon: IconType,
+    title: string,
+    value: string,
+
 }

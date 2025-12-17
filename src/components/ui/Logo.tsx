@@ -6,7 +6,7 @@ const Logo = () => {
     return (
         <Link to={"/"}>
             {letter.map((char,i) => (
-                <span key={i} style={{ "--i": i } as React.CSSProperties} className="logo">{char}</span>
+                <span key={i} style={{ "--i": i } as React.CSSProperties} className="logo font-head">{char}</span>
             ))}
         </Link>
     )

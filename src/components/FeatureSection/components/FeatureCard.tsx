@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
-import { shopItem } from "../../../data"
+import { featureProducts } from "../../../data"
 import Card from "../../ui/Card"
+import { Link } from "react-router-dom"
 
 const container = {
     hidden: {},
@@ -22,25 +23,24 @@ const image = {
 }
 
 const FeatureCard = () => {
-    const feature = shopItem.slice(0, 4)
+    const MotionLink = motion(Link)
 
     return (
         <motion.div
             variants={container}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.2 }}
             className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10"
         >
-            {feature.map((item) => (
-                <motion.span variants={image}>
+            {featureProducts.map((item) => (
+                <MotionLink to={`prodcut/${item.id}`} variants={image}>
                     <Card
-                        id={item.id}
                         image={item.image}
                         price={item.price}
                         name={item.name}
                     />
-                </motion.span>
+                </MotionLink>
             ))}
         </motion.div>
     )

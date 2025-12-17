@@ -1,4 +1,6 @@
-import type { ILinks, IMetaTeam, IProduct} from "../../src/interface";
+import { MdOutlineEmail } from "react-icons/md";
+import { BiMapPin, BiPhone } from "react-icons/bi";
+import type { IContact, ILinks, IMetaTeam, IProduct} from "../../src/interface";
 
 import team1 from "../assets/team-1.webp"
 import team2 from "../assets/team-2.webp"
@@ -118,4 +120,60 @@ const shopItem : IProduct[] = [
     }
 ]
 
-export {navLink ,metaTeam, shopItem}
+const contactData: IContact[] = [
+    {
+        id: 1,
+        icon: MdOutlineEmail,
+        href: "mailto:mohammedelsisi21@gmail.com",
+        title: "Email",
+        value: "mohamedelsisi@gmail.com",
+    },
+    {
+        id: 2,
+        icon: BiPhone,
+        href: "tel:201011707304",
+        title: "Phone",
+        value: "+20 101 170 7304",
+    },
+    {
+        id: 3,
+        href: "#",
+        icon: BiMapPin,
+        title: "Location",
+        value: "Sohag, Egypt",
+    },
+];
+
+const featureProducts = [
+    {
+        id: 1,
+        image: product1,
+        name: "Chair",
+        price: 96,
+        title: "Contemporary design chair for stylish interiors",
+        desc: "Elevate your space with this modern wooden chair, expertly crafted to blend contemporary style and everyday comfort. Featuring a beautifully curved seat and ergonomic backrest for optimal support, this chair sits atop sturdy metal legs that add a touch of industrial elegance. Its versatile design makes it the perfect statement piece for living rooms, offices, or study areas. Available in a range of wood finishes and metal leg colors to suit your decor, with dimensions designed to fit most seating arrangements. Experience lasting durability and refined comfort with this must-have addition to your home or workspace."
+    },{
+        id: 2,
+        image: product2,
+        name: "Armchair",
+        price: 120,
+        title: "Stylish seating for any living space",
+        desc: "Elevate your living space with our modern wooden armchair, expertly crafted from premium wood and featuring a hand-woven rattan backrest for a touch of natural elegance. The generously padded cushion ensures exceptional comfort, while the sleek, contemporary silhouette adds sophistication to any room. Available in a range of finishes such as walnut or oak, and cushion colors including cream, grey, or navy to complement your décor. Perfect for your lounge, reading corner, or bedroom. Dimensions: 85cm x 65cm x 75cm. Experience timeless style and superior craftsmanship with every detail."
+    },{
+        id: 3,
+        image: product3,
+        name: "Desk",
+        price: 150,
+        title: "Elegant wooden workspace for home or office",
+        desc: 'Elevate your workspace with this stunning mid-century modern desk, handcrafted from richly finished walnut wood. Boasting four spacious drawers, this desk offers generous storage for all your office essentials while its sleek, timeless silhouette complements any décor. Perfect for both home offices and creative studios, its sturdy build ensures lasting durability and style. Dimensions: 48"W x 24"D x 30"H. Transform your productivity and space with this iconic piece.'
+    },{
+        id: 4,
+        image: product4,
+        name: "Sideboard",
+        price: 190,
+        title: "Elegant storage solution for modern and vintage spaces",
+        desc: "Elevate your home décor with this elegant mid-century wooden sideboard, expertly crafted with clean, timeless lines and a rich, natural wood finish that brings warmth and sophistication to any space. Featuring generous storage options, including spacious drawers and cabinets, it's perfect for organizing your living room, dining area, or office essentials. Measuring approximately 150cm wide, 45cm deep, and 80cm high, this versatile piece offers both style and practicality, seamlessly blending vintage charm with modern functionality."
+    }
+]
+
+export {navLink ,metaTeam, shopItem, contactData, featureProducts}
