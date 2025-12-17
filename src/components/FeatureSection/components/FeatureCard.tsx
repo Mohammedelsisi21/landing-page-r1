@@ -6,26 +6,24 @@ const container = {
     hidden: {},
     visible: {
         transition: {
-            staggerChildren: 0.15
+            staggerChildren: 0.6
         }
     },
 }
 
 const image = {
     hidden: {
-        x: -10,
         opacity: 0
     },
     visible: {
-        x: 0,
         opacity: 1,
-        transition: { duration: 0.7 }
+        transition: { duration: 0.6 }
     }
 }
 
 const FeatureCard = () => {
     const feature = shopItem.slice(0, 4)
-    
+
     return (
         <motion.div
             variants={container}
@@ -36,7 +34,7 @@ const FeatureCard = () => {
         >
             {feature.map((item) => (
                 <motion.div key={item.id} variants={image}>
-                    <Card
+                    <Card 
                         id={item.id}
                         image={item.image}
                         price={item.price}

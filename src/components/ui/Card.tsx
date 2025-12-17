@@ -18,7 +18,7 @@ const Card = ({id, image, price, name}: IProps) => {
                     className="w-full h-full object-cover duration-500 group-hover:scale-110"
                 />
             </div>
-            <div className="space-y-1 text-center">
+            <div className="space-y-1">
                 <h3 className="text-lg font-medium text-gray-900 truncate">{name}</h3>
                 <p className="text-gray-900 font-medium">{formattedPrice(price)}</p>
             </div>
