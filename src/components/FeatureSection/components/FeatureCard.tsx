@@ -34,7 +34,7 @@ const FeatureCard = () => {
             className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10"
         >
             {featureProducts.map((item) => (
-                <MotionLink to={`prodcut/${item.id}`} variants={image}>
+                <MotionLink key={item.id} to={`product/${item.id}`} variants={image}>
                     <Card
                         image={item.image}
                         price={item.price}
