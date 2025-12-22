@@ -1,11 +1,13 @@
-import BrandSection from "../components/BrandSection"
-import FeatureSection from "../components/FeatureSection"
-import HeroSectio from "../components/HeroSectio"
+import { lazy } from "react"
+
+const BrandSection = lazy(() => import("../components/BrandSection"))
+const FeatureSection = lazy(() => import("../components/FeatureSection"))
+const HeroSection = lazy(() => import("../components/HeroSection"))
 
 const HomePage = () => {
   return (
     <>
-      <HeroSectio />
+      <HeroSection />
       <FeatureSection />
       <BrandSection />
     </>

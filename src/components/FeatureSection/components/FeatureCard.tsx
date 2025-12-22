@@ -2,6 +2,7 @@ import { motion } from "framer-motion"
 import { featureProducts } from "../../../data"
 import Card from "../../ui/Card"
 import { Link } from "react-router-dom"
+import { memo } from "react"
 
 const container = {
     hidden: {},
@@ -46,4 +47,4 @@ const FeatureCard = () => {
     )
 }
 
-export default FeatureCard
+export default memo(FeatureCard)

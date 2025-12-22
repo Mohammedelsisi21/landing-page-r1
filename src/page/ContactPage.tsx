@@ -1,5 +1,7 @@
+import { lazy } from "react"
 import { motion } from "framer-motion"
-import ContactCards from "../components/ContactCards"
+
+const ContactCards = lazy(() => import("../components/ContactCards"))
 
 const ContactPage = () => {
   return (

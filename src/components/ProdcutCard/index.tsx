@@ -1,4 +1,4 @@
-import { motion } from "framer-motion"
+import { memo, motion } from "framer-motion"
 import { shopItem } from "../../data"
 import Card from "../ui/Card"
 import { Link } from "react-router-dom"
@@ -41,4 +41,4 @@ return (
     </motion.div>
 )}
 
-export default ProdcutCards
+export default memo(ProdcutCards)
