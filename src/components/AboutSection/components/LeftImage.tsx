@@ -18,7 +18,7 @@ return (
     <motion.div
     variants={leftVariants}
     initial='hidden'
-    viewport={{amount: .3, once: false}}
+    viewport={{amount: .3, once: true}}
     whileInView="visible"
     className="h-125 lg:w-1/2 w-full">
         <motion.img variants={image} src="/our.webp" className="w-full h-full object-cover rounded-2xl" alt="Brightly lit modern interior with vintage wooden furniture"/>

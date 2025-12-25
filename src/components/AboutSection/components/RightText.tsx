@@ -26,7 +26,7 @@ return (
     <motion.div
     variants={leftVariants}
     initial="hidden"
-    viewport={{amount: .3, once: false}}
+    viewport={{amount: .3, once: true}}
     whileInView="visible"
     transition={{duration: .3, ease: "easeOut"}}
     className="lg:w-1/2 mt-5">

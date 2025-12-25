@@ -23,8 +23,8 @@ const image = {
     }
 }
 
+const MotionLink = motion(Link)
 const FeatureCard = () => {
-    const MotionLink = motion(Link)
 
     return (
         <motion.div

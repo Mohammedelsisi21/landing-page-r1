@@ -24,7 +24,7 @@ return (
     <motion.div
     variants={rightVariants}
     initial="hidden"
-    viewport={{amount: .3, once: false}}
+    viewport={{amount: .3, once: true}}
     whileInView="visible"
     className="grid grid-cols-2 gap-6 lg:w-1/2 w-full mt-10 lg:mt-0">
         <div className="space-y-4 w-full">
